@@ -2,13 +2,13 @@
 
 This project processes microbial taxonomic profiles to classify Inflammatory Bowel Disease (IBD) subtypes, specifically **Ulcerative Colitis (UC)** and **Crohn’s Disease (CD)**, using machine learning techniques.
 
-## 📂 Dataset
+## Dataset
 
 - **Microbiota Profiles**: `taxonomic_profiles.tsv`
 - **Metadata**: `hmp2_metadata_2018-08-20.csv`
 - Source: [Human Microbiome Project (HMP2)](https://ibdmdb.org/)
 
-## 🔧 Pipeline Overview
+## Pipeline Overview
 
 1. **Data Loading**
    - Reads taxonomic profiles and metadata.
@@ -39,18 +39,18 @@ This project processes microbial taxonomic profiles to classify Inflammatory Bow
    - Optimizes for **recall**.
    - Saves confusion matrix plot and trained models (`.joblib` files).
 
-## 📊 Output
+## Output
 
 - `confusion_matrix_voting_holdout.png`: Confusion matrix image.
 - `voting_weights_comparison.csv`: Recall and AUC scores for different weight combinations.
 - `best_voting_model_holdout.joblib`: Trained ensemble model.
 - `stacking_model_holdout.joblib`: Trained stacking model.
 
-## 🚀 How to Run
+## How to Run
 
 You can run this script inside a Kaggle notebook or locally if you have the data and required packages. Just make sure you upload both input files and run all cells in order.
 
-## 🧪 Dependencies
+## Dependencies
 
 - `pandas`, `numpy`, `matplotlib`, `seaborn`
 - `scikit-learn`
